@@ -55,3 +55,24 @@
     margin: 0 auto;
     margin-top: 30px;
 }
+
+/* SHOW / CONTATO INDIVIDUAL */
+#view-contact-container{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.bold{
+    font-weight: bold;
+    transition: 0.5s all ease-in-out;
+    cursor:pointer;
+}
+.bold:hover{
+    font-size: 110%;
+}
+.contato{
+    color: blue;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+}
