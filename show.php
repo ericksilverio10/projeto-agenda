@@ -1,14 +1,21 @@
 <?php
     include_once('templates/header.php');
 ?>
-<div class="container" id="view-contact-container">
-    <h1 id="main-title"><?=$contact['name']?></h1>
-    <p class="bold">Telefone:</p>
-    <p id="contato"><?=$contact['phone']?></p>
-    <p class="bold">Observações:</p>
-    <p><?=$contact['observations']?></p>
-    <?php include_once('templates/backbtn.html')?>
-</div>
+    <div class="container-show">
+        <h1 id="main-title"><?=$trabalho['titulo']?></h1>
+        <p class="bold">Cliente:</p>
+        <p class="cliente"><?=$trabalho['cliente']?></p>
+        <p class="bold">Data:</p>
+        <p class="cliente"><?=$trabalho['data']?></p>
+        <p class="bold">Feito por:</p>
+        <p class="cliente"><?=$trabalho['nome']?></p>
+        <p class="bold">Valor:</p>
+        <p class="cliente">R$ <?=$trabalho['valor']?></p>
+        <?php if($trabalho['observacao'] != ''):?>
+            <p class="bold">Observações:</p>
+            <p class="cliente"><?=$trabalho['observacao']?></p>
+        <?php endif;?>
+    </div>
 <?php
     include_once('templates/footer.php');
 ?>
