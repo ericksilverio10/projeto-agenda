@@ -30,14 +30,14 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #920097;">
             <a class="nav-brand" href="<?=$BASE_URL?>index.php">
-                <img src="<?=$BASE_URL?>img/logo_handspike.svg" alt="Handspike Media">
+                <img src="<?=$BASE_URL?>img/logo.svg" alt="Handspike Media">
             </a>
             <div>
                 <div class="navbar-nav">
-                    <a href="<?=$BASE_URL?>index.php" id= "home-link" class="nav-link active">Início</a>
-                    <a href="<?=$BASE_URL?>create.php" id= "home-link" class="nav-link active">Adicionar Material</a>
+                    <a href="<?=$BASE_URL?>index.php" id= "home-link" class="nav-link active"><i class="fas fa-house"></i>     Início</a>
+                    <a href="<?=$BASE_URL?>create.php" id= "home-link" class="nav-link active"><i class="fas fa-plus"></i>   Adicionar Material</a>
                 </div>
             </div>
         </nav>

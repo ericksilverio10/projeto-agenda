@@ -6,7 +6,7 @@
         <?php if(isset($printMsg) && $printMsg != ''):?>
             <p id="msg"><?=$printMsg?></p>
         <?php endif; ?>
-        <h1 id="main-title">Bem-Vindo</h1>
+        <h1 id="main-title">Bem-Vindo, ericksilverio10</h1>
         <?php if(count($trabalhos) > 0 ):?>
             <table class="table" id="trabalhos-table">
                 <thead>
@@ -44,6 +44,10 @@
                     <?php endforeach?>    
                 </tbody>
             </table>
+            <div class="total">
+                <h1 id="main-title"><i style="margin-right: 5px;" class="fas fa-sack-dollar"></i> Total: R$ <?=$total['total']?></h1>
+            </div>
+            
             <?php else:?>
                 <p id="empty-list-text">Ainda não há trabalhos na sua agenda, <a href="<?=$BASE_URL?>create.php">clique aqui para adicionar</a></p>
         <?php endif;?>

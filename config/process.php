@@ -72,3 +72,8 @@
         $stmt -> execute();
         $trabalhos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    $query = "SELECT SUM(valor) AS total FROM trabalhos;";
+    $stmt = $conn->prepare($query);
+    $stmt->execute();
+    $total = $stmt->fetch(PDO::FETCH_ASSOC);

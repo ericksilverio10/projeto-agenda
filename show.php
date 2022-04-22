@@ -16,6 +16,9 @@
             <p class="cliente"><?=$trabalho['observacao']?></p>
         <?php endif;?>
     </div>
+    <div style="text-align: center;" class="back-btn">
+        <?php include_once('templates/backbtn.html'); ?>
+    </div>
 <?php
     include_once('templates/footer.php');
 ?>
