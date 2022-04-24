@@ -31,14 +31,14 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #920097;">
-            <a class="nav-brand" href="<?=$BASE_URL?>index.php">
+            <a class="nav-brand" href="<?=$BASE_URL?>fellype.php">
                 <img src="<?=$BASE_URL?>img/logo.svg" alt="Handspike Media">
             </a>
             <div>
                 <div class="navbar-nav">
-                    <a href="<?=$BASE_URL?>index.php" id= "home-link" class="nav-link active"><i class="fas fa-house"></i>     Início</a>
-                    <a href="<?=$BASE_URL?>relatorio_erick.php" id= "home-link" class="nav-link active"><i class="fas fa-user"></i>   Erick</a>
-                    <a href="<?=$BASE_URL?>relatorio_fellype.php" id= "home-link" class="nav-link active"><i class="fas fa-user"></i>   Fellype</a>
+                    <a href="<?=$BASE_URL?>fellype.php" id= "home-link" class="nav-link active"><i class="fas fa-house"></i>     Início</a>
+                    <a href="<?=$BASE_URL?>create-fellype.php" id= "home-link" class="nav-link active"><i class="fas fa-plus"></i>   Adicionar Material</a>
+                    <a href="<?=$BASE_URL?>fellype.php" id= "home-link" class="nav-link active"><i class="fas fa-user"></i>   Fellype</a>
                 </div>
             </div>
         </nav>

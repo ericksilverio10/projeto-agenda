@@ -1,5 +1,5 @@
 <?php
-    include_once('templates/header.php');
+    include_once('templates/header-erick.php');
 ?>  
     <link rel="stylesheet" href="<?= $BASE_URL ?>css/styles.css">
     <div style="text-align: center;" class="container">
@@ -40,7 +40,7 @@
         <button type="submit" class="btn btn-dark">Atualizar</button>
         </form>
         <div style="max-width: 500px; margin: 20px auto; "class="back-btn">
-                <?php include_once('templates/backbtn.html'); ?>
+                <?php include_once('templates/backbtn-erick.html'); ?>
     </div>
 <?php
     include_once('templates/footer.php');

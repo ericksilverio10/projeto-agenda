@@ -1,5 +1,5 @@
 <?php
-    include_once('templates/header.php');
+    include_once('templates/header-fellype.php');
 ?>
 <head>
     <link rel="stylesheet" href="<?=$BASE_URL?>css/styles.css">
@@ -15,9 +15,9 @@
     style="width:50px;height:50px;margin-right:10px;">
 </lord-icon><?=$printMsg?></p>
         <?php endif; ?>
-        <h1 id="main-title">Bem-Vindo, ericksilverio10</h1>
+        <h1 id="main-title">Bem vindo, Fellype</h1>
         <?php if(count($trabalhos) > 0 ):?>
-            <table  class="table" id="trabalhos-table">
+            <table class="table" id="trabalhos-table">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -31,21 +31,21 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach($trabalhos as $trabalho):?>
+                    <?php foreach($trabalhosFellype as $trabalhoFellype):?>
                         <tr>
-                            <td scope="row" class="id"><?=$trabalho['id']?></td>
-                            <td scope="row" class="nome"><?=$trabalho['nome']?></td>
-                            <td class= "data-td" scope="row"><?=$trabalho['data']?></td>
-                            <td scope="row"><?=$trabalho['material']?></td>
-                            <td scope="row"><?=$trabalho['titulo']?></td>
-                            <td scope="row"><?=$trabalho['cliente']?></td>
-                            <td scope="row">R$ <?=$trabalho['valor']?></td>
+                            <td scope="row" class="id"><?=$trabalhoFellype['id']?></td>
+                            <td scope="row" class="nome"><?=$trabalhoFellype['nome']?></td>
+                            <td scope="row"><?=$trabalhoFellype['data']?></td>
+                            <td scope="row"><?=$trabalhoFellype['material']?></td>
+                            <td scope="row"><?=$trabalhoFellype['titulo']?></td>
+                            <td scope="row"><?=$trabalhoFellype['cliente']?></td>
+                            <td scope="row">R$ <?=$trabalhoFellype['valor']?></td>
                             <td class="actions">
-                                <a href="<?=$BASE_URL?>show.php?id=<?=$trabalho['id']?>"><i class="fas fa-eye check-icon"></i></a>
-                                <a href="<?=$BASE_URL?>edit.php?id=<?=$trabalho['id']?>"><i class="far fa-edit edit-icon"></i></a>
+                                <a href="<?=$BASE_URL?>show-fellype.php?id=<?=$trabalhoFellype['id']?>"><i class="fas fa-eye check-icon"></i></a>
+                                <a href="<?=$BASE_URL?>edit-fellype.php?id=<?=$trabalhoFellype['id']?>"><i class="far fa-edit edit-icon"></i></a>
                                 <form style="display: inline-block;"action="<?=$BASE_URL?>config/process.php" method="POST">
-                                    <input type="hidden" name="type" value="delete">
-                                    <input type="hidden" name="id" value="<?=$trabalho['id']?>">
+                                    <input type="hidden" name="type" value="delete-fellype">
+                                    <input type="hidden" name="id" value="<?=$trabalhoFellype['id']?>">
                                     <button class="delete-btn" type="submit"><i class="fas fa-times delete-icon"></i></button>       
                                 </form>
                             </td>
@@ -54,7 +54,7 @@
                 </tbody>
             </table>
             <div class="total">
-                <h1 id="main-title"><i style="margin-right: 5px;" class="fas fa-sack-dollar"></i> Total: R$ <?=$total['total']?></h1>
+                <h1 id="main-title"><i style="margin-right: 5px;" class="fas fa-sack-dollar"></i> Total: R$ <?=$totalFellype['total']?></h1>
             </div>
             
             <?php else:?>
@@ -78,8 +78,5 @@
     max-width: 500px;
     margin: 0 auto;
     margin-top: 30px;
-    }
-
+}
 </style>
-
-

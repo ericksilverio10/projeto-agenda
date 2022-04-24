@@ -1,5 +1,5 @@
 <?php
-    include_once('templates/header.php');
+    include_once('templates/header-erick.php');
 ?>  
     <link rel="stylesheet" href="<?= $BASE_URL ?>css/styles.css">
     <div style="text-align: center;" class="container">
@@ -9,12 +9,11 @@
         <div class="form-group">
             <div style= "margin-bottom: 20px;" class="form-nome">
                 <h2 style= "margin-bottom: 10px;">Quem é você?</h2>
-                <label style="margin-right: 10px; font-size: 20px;" for="erick"><input style="margin-right: 6px;" class="form_input_radio" required type="radio" name="nome" value="Erick" id="erick">Erick</label>
-                <label style="margin-right: 10px; font-size: 20px;" for="fellype"><input style="margin-right: 6px;" class="form_input_radio" required type="radio" name="nome" value="Fellype" id="fellype">Fellype</label>
+                <label style="margin-right: 10px; font-size: 20px;" for="erick"><input style="margin-right: 6px;" class="form_input_radio" required type="radio" name="nome" value="Erick" id="erick" checked>Erick</label>
             </div>
             <div style= "margin-bottom: 20px;" class="form-data">
                 <h2 style= "margin-bottom: 10px;">Data de hoje:</h2>
-                <input class="form_input_text" type="date" name="data" id="data" value="<?php echo date('Y-M-D');?>>
+                <input class="form_input_text" type="date" name="data" id="data" value="<?php echo date('d-m-y');?>>
             </div>
             <div style= "margin-bottom: 20px;" class="form-material">
                 <h2 style= "margin-bottom: 10px;">Material:</h2>
@@ -59,7 +58,7 @@
         <button type="submit" class="btn btn-dark" >Adicionar</button>
         </form>
         <div style="max-width: 500px; margin: 20px auto; " class="back-btn">
-                <?php include_once('templates/backbtn.html'); ?>
+                <?php include_once('templates/backbtn-erick.html'); ?>
         </div>
 <?php
     include_once('templates/footer.php');
